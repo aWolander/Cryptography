@@ -1,4 +1,5 @@
-(*Performs addition of two points {x1,y1} and {x2,y2} on an elliptic curve y^2=x^3+ax+b. The elliptic curve can be specified to be over the field of order p.*)
+(*Performs addition of two points {x1,y1} and {x2,y2} on an elliptic curve y^2=x^3+ax+b. 
+The elliptic curve can be specified to be over the field of order p.*)
 
 EllipticAdd[{x1_, y1_}, {x2_, y2_}, {a_, b_}, p_ : 0] := 
  Module[{s, x3, y3},
