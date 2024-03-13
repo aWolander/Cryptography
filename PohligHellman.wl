@@ -1,4 +1,6 @@
-(*Attempts to solve the DLP g^x=h (mod p) using the Pohlig-Hellman algorithm. Uses MultiplicativeOrder to solve in this implementations, though it is easily adapted for other algorithms like Shank's.*)
+(*Attempts to solve the DLP g^x=h (mod p) using the Pohlig-Hellman algorithm. 
+Uses MultiplicativeOrder to solve in this implementations, 
+though it is easily adapted for other algorithms like Shank's.*)
 
 PohligHellman[g_, p_, h_] :=
   Module[{xTable, PieTable, PrimePowersTable, r, pi, ei, gi, hi, xj, 
